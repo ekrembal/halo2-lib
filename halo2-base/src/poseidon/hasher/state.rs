@@ -12,8 +12,8 @@ use crate::{
 };
 
 #[derive(Clone, Debug)]
-pub(crate) struct PoseidonState<F: ScalarField, const T: usize, const RATE: usize> {
-    pub(crate) s: [AssignedValue<F>; T],
+pub struct PoseidonState<F: ScalarField, const T: usize, const RATE: usize> {
+    pub s: [AssignedValue<F>; T],
 }
 
 impl<F: ScalarField, const T: usize, const RATE: usize> PoseidonState<F, T, RATE> {
